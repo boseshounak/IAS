@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:background="#00FF"
+
+    android:layout_marginTop="8dp"
+    tools:context=".MyPro.Profile_Act">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="382dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="17dp"
+        android:text="My Industries"
+        android:textColor="#ef472d"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/updt_nofact"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="YOU HAVE NOT SETUP ANY FACTORY"
+        android:textColor="#ef472d"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:id="@+id/recycler_pro"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.RecyclerView>
+</android.support.constraint.ConstraintLayout>
